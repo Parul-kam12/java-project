@@ -24,36 +24,8 @@ public class LogOutTest extends BaseTest{
 		Assert.assertTrue(true,"login is successful");
 	}
 
-	@Test(priority=3)
-	public void clickOnProduct() {
-    ProductsPage p= new ProductsPage(driver);
-    p.clickProducts();
-    Assert.assertTrue(true," click on product is successful");
-}
-	@Test(priority=4)
-	public void addFirstProduct() {
-	    ProductsPage p= new ProductsPage(driver);
-	    p.addFirstProduct();
-	}
-	   @Test(priority=5)
-	    public void addSecondProduct() {
-		    ProductsPage p= new ProductsPage(driver);
-		    p.addSecondProduct();
-		    }
-	   
-	   @Test(priority=6)
-	   public void clickContinueShopping() {
-		    ProductsPage p= new ProductsPage(driver);
-		    p.clickContinueShopping();
-	   }
-		    
-		 @Test(priority=7)
-		 public void clickViewCart() {
-		   ProductsPage p= new ProductsPage(driver);
-			p.clickViewCart();
-		 }
-
-       @Test(priority=8)
+	
+       @Test(priority=2)
 	   public void Logout() {
 		LogOutPage out = new LogOutPage(driver); 
         out.ClickLogOut();   
